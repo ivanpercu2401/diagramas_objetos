@@ -1,0 +1,35 @@
+@startuml
+object Empresa {
+    nombre = "Mi Empresa"
+    direccion = "Calle Principal 123"
+}
+
+object Departamento {
+    nombre = "Departamento de Desarrollo"
+    empleados = ["Ana", "Juan", "María"]
+}
+
+object Empleado {
+    nombre = "Ana"
+    apellido = "López"
+    cedula = "12345678A"
+    salario = 2000000
+}
+
+object Empleado {
+    nombre = "Juan"
+    apellido = "Martínez"
+    cedula = "87654321B"
+    salario = 1500000
+}
+
+object Empleado {
+    nombre = "María"
+    apellido = "González"
+    cedula = "98765432C"
+    salario = 3000000
+}
+
+Empresa --> Departamento : tiene
+Departamento --> Empleado : incluye
+@enduml
